@@ -14,13 +14,6 @@ layout: default
 
     {% include nav-share.html %}
 
-    {% include post-comments.html %}
-
-  </article>
-
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
-
-  <div>
     <script src="https://utteranc.es/client.js"
             repo="vs-chadh/vs-chadh.github.io"
             issue-term="pathname"
@@ -29,7 +22,11 @@ layout: default
             crossorigin="anonymous"
             async>
     </script>
-  </div>
+
+  </article>
+
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+
 </main>
 
 {% include site-footer.html %}
